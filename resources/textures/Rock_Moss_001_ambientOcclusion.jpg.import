@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/Rock_Moss_001_ambientOcclusion.jpg-8c2da35f57d5eae3e0be742b9213d708.s3tc.stex"
+path.etc2="res://.import/Rock_Moss_001_ambientOcclusion.jpg-8c2da35f57d5eae3e0be742b9213d708.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://resources/textures/Rock_Moss_001_ambientOcclusion.jpg"
+dest_files=[ "res://.import/Rock_Moss_001_ambientOcclusion.jpg-8c2da35f57d5eae3e0be742b9213d708.s3tc.stex", "res://.import/Rock_Moss_001_ambientOcclusion.jpg-8c2da35f57d5eae3e0be742b9213d708.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

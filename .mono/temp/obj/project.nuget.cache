@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "of7fhry5/bZcKc2LflBuJhGD7mTFwOvIapWM54lUOrWHkAE7CSegCVTE+UzAQFL8UDUjrDWtWz90E9U761qC2A==",
+  "success": true,
+  "projectFilePath": "D:\\MyFiles\\Maze3d\\Maze3d.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SPT\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\SPT\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
