@@ -156,6 +156,7 @@ func blocktype():
 #places the walls with transfrom t
 func place_block(t):
 	var g = true
+	var p
 	for i in t:
 		g = true
 		for j in placed_blocks:
@@ -165,6 +166,11 @@ func place_block(t):
 		if g:
 			var w = wall.instance()
 			w.transform = i
+			var s = rand_range(0.99, 1.01)
+			while (p == s):
+				s = rand_range(0.99, 1.01)
+			p = s
+			w.scale = Vector3(s, s, s)
 			call_deferred("add_child", w)
 			placed_blocks.append(i)
 
