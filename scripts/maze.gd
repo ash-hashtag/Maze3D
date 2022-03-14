@@ -18,6 +18,7 @@ onready var wall = preload("res://scenes/wall.tscn")
 onready var player = get_node("Player")
 onready var line = $CanvasLayer/Control/LineEdit
 onready var m_sensi = $CanvasLayer/Control/HSlider
+onready var fpslabel = $CanvasLayer/Control/fpslabel
 
 var width = 4  # width of map (in tiles)
 var height = 4 # height of map (in tiles)
@@ -32,18 +33,17 @@ func _ready():
 	$CanvasLayer/Control/replay.hide()
 	$CanvasLayer/Control/Label.hide()
 	m_sensi.hide()
-	
 
 func _physics_process(delta):
 	if k < cells.size() && mazedone: blocktype()
 	if k == cells.size() && mazedone:
 		var fl = load("res://scenes/Flag.tscn").instance()
-		fl.transform = Transform(r0, Vector3(f.x, 0, f.y)*10)
+		fl.transform = Transform(r0, Vector3(f.x, 0, f.y)*12)
 		add_child(fl)
 		k += 1
 	if isesc:
 		player.MouseSensitivity = m_sensi.value / 300
-
+	fpslabel = str(round(1/(delta+0.001)))
 
 # returns an array of cell's unvisited neighbors
 func check_neighbors(cell, unvisited):
@@ -97,8 +97,8 @@ const r90 = Basis(Vector3(-0,0,-1), Vector3(0,1,0), Vector3(1,0,0))
 
 #Determines the walls shape and generates required transform
 func blocktype():
-	var m = 5
-	var cs = 10
+	var m = 6
+	var cs = 12
 	var i  = cells.keys()[k]
 	var t = []
 	var cp = Vector3(i.x, 0, i.y) * cs
@@ -153,6 +153,8 @@ func blocktype():
 	k += 1
 
 
+#TODO: place corners
+
 #places the walls with transfrom t
 func place_block(t):
 	var g = true
@@ -166,9 +168,9 @@ func place_block(t):
 		if g:
 			var w = wall.instance()
 			w.transform = i
-			var s = rand_range(0.99, 1.01)
+			var s = rand_range(0.999, 1.001)
 			while (p == s):
-				s = rand_range(0.99, 1.01)
+				s = rand_range(0.999, 1.001)
 			p = s
 			w.scale = Vector3(s, s, s)
 			call_deferred("add_child", w)
@@ -225,7 +227,7 @@ func _on_generate_button_down():
 	$CanvasLayer/Control/LineEdit.hide()
 	$CanvasLayer/Control/generate.hide()
 	var t = []
-	t.append(Transform(r0, (Vector3.FORWARD*5.5)))
-	t.append(Transform(r90, (Vector3.LEFT*5.5)))
+	t.append(Transform(r0, (Vector3.FORWARD*6)))
+	t.append(Transform(r90, (Vector3.LEFT*6)))
 	place_block(t)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

@@ -13,6 +13,7 @@ albedo_texture = ExtResource( 4 )
 normal_enabled = true
 normal_scale = 16.0
 normal_texture = ExtResource( 3 )
+uv1_scale = Vector3( 10, 10, 1 )
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 151.475, 1, 147.737 )
@@ -28,6 +29,7 @@ far = 200.0
 
 [node name="platform" type="KinematicBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.772, -1, 85.924 )
+collision_layer = 4
 
 [node name="MeshInstance" type="MeshInstance" parent="platform"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.8491, 0, 47.8679 )
@@ -106,6 +108,13 @@ margin_top = -7.60001
 margin_right = -143.0
 margin_bottom = 11.4
 text = "Mouse Sensi"
+
+[node name="fpslabel" type="Label" parent="CanvasLayer/Control"]
+margin_right = 69.0
+margin_bottom = 45.0
+text = "60"
+align = 1
+valign = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.11, 0 )

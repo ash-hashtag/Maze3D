@@ -1,0 +1,9 @@
+D:\MyFiles\Maze3d\.mono\temp\bin\ExportDebug\Maze3d.dll
+D:\MyFiles\Maze3d\.mono\temp\bin\ExportDebug\Maze3d.pdb
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.csproj.AssemblyReference.cache
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.AssemblyInfoInputs.cache
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.AssemblyInfo.cs
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.csproj.CoreCompileInputs.cache
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.dll
+D:\MyFiles\Maze3d\.mono\temp\obj\ExportDebug\Maze3d.pdb
