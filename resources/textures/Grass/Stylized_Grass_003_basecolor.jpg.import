@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Rock_Moss_001_basecolor.jpg-e2c06972f8aa76862278de507fe796cb.s3tc.stex"
-path.etc2="res://.import/Rock_Moss_001_basecolor.jpg-e2c06972f8aa76862278de507fe796cb.etc2.stex"
+path.s3tc="res://.import/Stylized_Grass_003_basecolor.jpg-7bf36f9d0b7e1409556f7a6d2640f343.s3tc.stex"
+path.etc2="res://.import/Stylized_Grass_003_basecolor.jpg-7bf36f9d0b7e1409556f7a6d2640f343.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://resources/textures/Rock_Moss_001_basecolor.jpg"
-dest_files=[ "res://.import/Rock_Moss_001_basecolor.jpg-e2c06972f8aa76862278de507fe796cb.s3tc.stex", "res://.import/Rock_Moss_001_basecolor.jpg-e2c06972f8aa76862278de507fe796cb.etc2.stex" ]
+source_file="res://resources/textures/Grass/Stylized_Grass_003_basecolor.jpg"
+dest_files=[ "res://.import/Stylized_Grass_003_basecolor.jpg-7bf36f9d0b7e1409556f7a6d2640f343.s3tc.stex", "res://.import/Stylized_Grass_003_basecolor.jpg-7bf36f9d0b7e1409556f7a6d2640f343.etc2.stex" ]
 
 [params]
 

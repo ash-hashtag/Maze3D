@@ -38,7 +38,7 @@ func _physics_process(delta):
 	if k < cells.size() && mazedone: blocktype()
 	if k == cells.size() && mazedone:
 		var fl = load("res://scenes/Flag.tscn").instance()
-		fl.transform = Transform(r0, Vector3(f.x, 0, f.y)*12)
+		fl.transform = Transform(r0, Vector3(f.x, 0, f.y)*10)
 		add_child(fl)
 		k += 1
 	if isesc:
@@ -97,8 +97,8 @@ const r90 = Basis(Vector3(-0,0,-1), Vector3(0,1,0), Vector3(1,0,0))
 
 #Determines the walls shape and generates required transform
 func blocktype():
-	var m = 6
-	var cs = 12
+	var m = 5
+	var cs = 10
 	var i  = cells.keys()[k]
 	var t = []
 	var cp = Vector3(i.x, 0, i.y) * cs
@@ -168,9 +168,9 @@ func place_block(t):
 		if g:
 			var w = wall.instance()
 			w.transform = i
-			var s = rand_range(0.999, 1.001)
+			var s = rand_range(0.99, 1.01)
 			while (p == s):
-				s = rand_range(0.999, 1.001)
+				s = rand_range(0.99, 1.01)
 			p = s
 			w.scale = Vector3(s, s, s)
 			call_deferred("add_child", w)

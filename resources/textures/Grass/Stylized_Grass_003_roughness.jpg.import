@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Rock_Moss_001_normal.jpg-507d0f88159bb57463c00bb4a524ffc5.s3tc.stex"
-path.etc2="res://.import/Rock_Moss_001_normal.jpg-507d0f88159bb57463c00bb4a524ffc5.etc2.stex"
+path.s3tc="res://.import/Stylized_Grass_003_roughness.jpg-87646515faede2f6e000e4a23e145b8c.s3tc.stex"
+path.etc2="res://.import/Stylized_Grass_003_roughness.jpg-87646515faede2f6e000e4a23e145b8c.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://resources/textures/Rock_Moss_001_normal.jpg"
-dest_files=[ "res://.import/Rock_Moss_001_normal.jpg-507d0f88159bb57463c00bb4a524ffc5.s3tc.stex", "res://.import/Rock_Moss_001_normal.jpg-507d0f88159bb57463c00bb4a524ffc5.etc2.stex" ]
+source_file="res://resources/textures/Grass/Stylized_Grass_003_roughness.jpg"
+dest_files=[ "res://.import/Stylized_Grass_003_roughness.jpg-87646515faede2f6e000e4a23e145b8c.s3tc.stex", "res://.import/Stylized_Grass_003_roughness.jpg-87646515faede2f6e000e4a23e145b8c.etc2.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=1
+compress/normal_map=0
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
